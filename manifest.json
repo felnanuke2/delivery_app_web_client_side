@@ -1,0 +1,25 @@
+{
+    "name": "DeliveryAppExample",
+    "short_name": "DeliveryApp",
+    "start_url": "/#/",
+    
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "Um Exemplo de Aplicativo par ao seu delivery",
+    "orientation": "portrait-primary",
+    "cached_urls":[], 
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "https://firebasestorage.googleapis.com/v0/b/lojavirtual-c82f5.appspot.com/o/appicon%2Fappexample%2Ficon-192x192.png?alt=media&token=823a79b1-47ca-4ba3-8d1e-ce6c4ff7689c",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://firebasestorage.googleapis.com/v0/b/lojavirtual-c82f5.appspot.com/o/appicon%2Fappexample%2Ficon-512x512.png?alt=media&token=2ead9a2c-d56e-4dab-85e4-9e0fc2c10298",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

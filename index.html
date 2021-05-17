@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--TODO change href para a href do dominio do github and remove '/' for sw.js from cach url-->
+  <base href="/">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+ 
+
+  
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <!--TODO change descriptions-->
+  <meta name="description" content="Exemplo do Nosso App de DeLivery">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="delivery_app_web_client_side">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>DeLivery App</title>
+  <link rel="manifest" href="/manifest.json">
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-messaging.js"></script>
+
+</head>
+<body>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCVX4oJifFSSjp-tOlGmzde73jCmeqrkRY",
+    authDomain: "lojavirtual-c82f5.firebaseapp.com",
+    projectId: "lojavirtual-c82f5",
+    storageBucket: "lojavirtual-c82f5.appspot.com",
+    messagingSenderId: "71882723771",
+    appId: "1:71882723771:web:57110b75f59f843a59f49e"
+  };
+  // Initialize FirebaseFLUTTER RUN
+  firebase.initializeApp(firebaseConfig);  
+  
+</script>
+
+<script>  
+if ('serviceWorker' in navigator) {
+   window.addEventListener('load', function () {
+     console.log('AAAAAAA');
+     navigator.serviceWorker.register("firebase-messaging-sw.js",{
+       
+     });
+  });
+ }
+ </script>
+
+
+
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
