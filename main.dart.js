@@ -48457,26 +48457,29 @@ case 6:case 1:return P.w(q,r)
 case 2:return P.v(o,r)}})
 return P.x($async$xd,r)},
 t_:function(a,b,c){return this.aa2(a,b,c)},
-aa2:function(a,b,c){var s=0,r=P.y(t.z),q,p=this,o,n,m,l
+aa2:function(a,b,c){var s=0,r=P.y(t.z),q,p=this,o,n,m,l,k,j
 var $async$t_=P.u(function(d,e){if(d===1)return P.v(e,r)
-while(true)switch(s){case 0:n=G
-m=P.e0("https://deliveryapp-paymentapi.herokuapp.com/mercadopago/createpreference/"+H.c($.a1J().e)+"/initpoint/"+H.c(p.b),0,null)
-l=C.az
+while(true)switch(s){case 0:m=window.location.href
+m.split("/#/")
+o=m[0]+"/#/"
+l=G
+k=P.e0("https://deliveryapp-paymentapi.herokuapp.com/mercadopago/createpreference/"+H.c($.a1J().e)+"/initpoint/"+H.c(p.b),0,null)
+j=C.az
 s=4
-return P.o(p.xA(a,b,c),$async$t_)
+return P.o(p.xA(a,b,c,o),$async$t_)
 case 4:s=3
-return P.o(n.aRn(m,l.Hz(e,null),null),$async$t_)
-case 3:o=e
-if(o.b===200){q=C.az.ut(0,B.aDg(J.J(U.aC1(o.e).c.a,"charset")).dC(0,o.x),null)
+return P.o(l.aRn(k,j.Hz(e,null),null),$async$t_)
+case 3:n=e
+if(n.b===200){q=C.az.ut(0,B.aDg(J.J(U.aC1(n.e).c.a,"charset")).dC(0,n.x),null)
 s=1
 break}q=null
 s=1
 break
 case 1:return P.w(q,r)}})
 return P.x($async$t_,r)},
-xA:function(a,b,c){return this.abH(a,b,c)},
-abH:function(a,b,c){var s=0,r=P.y(t.Q),q,p,o,n,m,l,k,j,i,h,g,f
-var $async$xA=P.u(function(d,e){if(d===1)return P.v(e,r)
+xA:function(a,b,c,d){return this.abH(a,b,c,d)},
+abH:function(a,b,c,d){var s=0,r=P.y(t.Q),q,p,o,n,m,l,k,j,i,h,g,f
+var $async$xA=P.u(function(e,a0){if(e===1)return P.v(a0,r)
 while(true)switch(s){case 0:o=t.X
 n=t.c
 i=H
@@ -48485,7 +48488,7 @@ g="Compras Feitas em "
 f=H
 s=3
 return P.o(E.r9(c),$async$xA)
-case 3:m=i.a([h.Z(["title",g+f.c(e.f)+" ","description","","category_id","","quantity",1,"currency_id","BRL","unit_price",a.db+J.J(a.go,"deliveryprice")],o,n)],t.fz)
+case 3:m=i.a([h.Z(["title",g+f.c(a0.f)+" ","description","","category_id","","quantity",1,"currency_id","BRL","unit_price",a.db+J.J(a.go,"deliveryprice")],o,n)],t.fz)
 l=b.f
 k=l.d
 j=l.b
@@ -48493,7 +48496,7 @@ l=l.r
 l.toString
 l=H.dR(l,"-","")
 p=t.z
-q=P.c5(P.Z(["items",m,"payer",P.Z(["name",k,"email",j,"identification",P.Z(["type","CPF","number",H.dR(l,".","")],o,o)],o,n),"payment_methods",P.Z(["excluded_payment_methods",H.a([P.D(p,p)],t.DM),"excluded_payment_types",H.a([P.Z(["id","ticket"],o,o),P.Z(["id","atm"],o,o),P.Z(["id","debit_card"],o,o)],t.lH),"installments",1],o,n)],p,p),p,p)
+q=P.c5(P.Z(["items",m,"payer",P.Z(["name",k,"email",j,"identification",P.Z(["type","CPF","number",H.dR(l,".","")],o,o)],o,n),"back_urls",P.Z(["success",d,"failure",d],o,o),"payment_methods",P.Z(["excluded_payment_methods",H.a([P.D(p,p)],t.DM),"excluded_payment_types",H.a([P.Z(["id","ticket"],o,o),P.Z(["id","atm"],o,o),P.Z(["id","debit_card"],o,o)],t.lH),"installments",1],o,n)],p,p),p,p)
 s=1
 break
 case 1:return P.w(q,r)}})
